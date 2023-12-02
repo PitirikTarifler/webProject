@@ -16,10 +16,15 @@
 <!-- header section starts -->
 
 <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+
     <a href="#" class="logo"><img src="images/logoname.png" alt="Logo"></a>
 
 
     <nav class="navbar">
+        <a href="#home">Anasayfa</a>
         <a href="#recipes">Tarifler</a>
         <a href="#menus">Menüler</a>
         <a href="#todaysmenu">Günün Menüsü</a>
@@ -46,21 +51,58 @@
 
 <!-- header section ends -->
 
+
+
+
+
+
+
 <!-- login form container -->
 
 <div class="login-form-container">
 
+    <i class="fas fa-time" id="form-close"></i>
+
     <form action="">
         <h3>Giriş Yap</h3>
-        <input type="email" class="box" placeholder="Email adresinizi giriniz.">
+        <input type="email" class="box" placeholder="E-mail adresinizi giriniz.">
         <input type="password" class="box" placeholder="Şifrenizi giriniz.">
         <input type="submit" value="Giriş Yap" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Bilgilerimi hatırla</label>
+        <p>Şifrenizi mi unuttunuz? <a href="#">Buraya tıklayınız</a></p>
+        <p>Henüz üye değil misiniz? <a href="#">Şimdi üye ol</a></p>
     </form>
 
 
 </div>
 
+<!-- home section starts -->
 
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Pıtırık tarifler'e hoşgeldin</h3>
+        <p>Sen de dolabına ürün eklemeye başla!</p>
+        <a href="#" class="btn">Şimdi başla</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+
+</section>
+
+<!-- home section ends -->
 
 
 
